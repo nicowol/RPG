@@ -1,14 +1,14 @@
-package entity;
+package src.entity;
 
-import java.awt.Color;
+//import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
-import main.GamePanel;
-import main.KeyHandler;
+import src.main.GamePanel;
+import src.main.KeyHandler;
 
 public class Player extends Entity {
 
@@ -35,14 +35,14 @@ public class Player extends Entity {
     public void getPlayerImage() {
 
         try{
-            up1 = ImageIO.read(getClass().getResourceAsStream("/player/player_back.png"));
-            up2 = ImageIO.read(getClass().getResourceAsStream("/player/player_back.png"));
-            down1 = ImageIO.read(getClass().getResourceAsStream("/player/player_front.png"));
-            down2 = ImageIO.read(getClass().getResourceAsStream("/player/player_front.png"));
-            left1 = ImageIO.read(getClass().getResourceAsStream("/player/player_left.png"));
-            left2 = ImageIO.read(getClass().getResourceAsStream("/player/player_left.png"));
-            right1 = ImageIO.read(getClass().getResourceAsStream("/player/player_right.png"));
-            right2 = ImageIO.read(getClass().getResourceAsStream("/player/player_right.png"));
+            up1 = ImageIO.read(getClass().getResourceAsStream("/res/player/player_back.png"));
+            up2 = ImageIO.read(getClass().getResourceAsStream("/res/player/player_back.png"));
+            down1 = ImageIO.read(getClass().getResourceAsStream("/res/player/player_front.png"));
+            down2 = ImageIO.read(getClass().getResourceAsStream("/res/player/player_front.png"));
+            left1 = ImageIO.read(getClass().getResourceAsStream("/res/player/player_left.png"));
+            left2 = ImageIO.read(getClass().getResourceAsStream("/res/player/player_left.png"));
+            right1 = ImageIO.read(getClass().getResourceAsStream("/res/player/player_right.png"));
+            right2 = ImageIO.read(getClass().getResourceAsStream("/res/player/player_right.png"));
 
         } catch(IOException e) {
             e.printStackTrace();
