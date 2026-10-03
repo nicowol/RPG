@@ -1,5 +1,6 @@
 package src.entity;
 
+import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
 
 public class Entity {
@@ -12,5 +13,9 @@ public class Entity {
 
     public int spriteCounter = 0;
     public int spiriteNum = 1;
+
+    //set collision area on player sprite
+    public Rectangle solidArea;
+    public boolean collisionOn = false;
     
 }
